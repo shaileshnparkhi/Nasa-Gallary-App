@@ -14,18 +14,10 @@ import UIKit
 
 protocol ImageDetailsPresentationLogic
 {
-  func presentSomething(response: ImageDetails.Something.Response)
+  
 }
 
 class ImageDetailsPresenter: ImageDetailsPresentationLogic
 {
   weak var viewController: ImageDetailsDisplayLogic?
-  
-  // MARK: Do something
-  
-  func presentSomething(response: ImageDetails.Something.Response)
-  {
-    let viewModel = ImageDetails.Something.ViewModel()
-    viewController?.displaySomething(viewModel: viewModel)
-  }
 }

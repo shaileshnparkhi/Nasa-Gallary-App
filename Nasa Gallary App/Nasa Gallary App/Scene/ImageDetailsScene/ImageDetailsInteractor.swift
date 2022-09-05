@@ -14,18 +14,20 @@ import UIKit
 
 protocol ImageDetailsBusinessLogic
 {
-  func doSomething(request: ImageDetails.Something.Request)
+ 
 }
 
 protocol ImageDetailsDataStore
 {
-    var selectedImageModel:  NasaImageList.ImageViewModel? { get set }
+    var selectedImageModelIndex: Int? { get set }
+    var imageDataArray:  [NasaImageList.ImageViewModel]? { get set }
 }
 
 class ImageDetailsInteractor: ImageDetailsBusinessLogic, ImageDetailsDataStore
 {
-   
-    var selectedImageModel: NasaImageList.ImageViewModel?
+    var selectedImageModelIndex: Int?
+    var imageDataArray: [NasaImageList.ImageViewModel]?
+
     
   var presenter: ImageDetailsPresentationLogic?
   var worker: ImageDetailsWorker?
@@ -35,10 +37,6 @@ class ImageDetailsInteractor: ImageDetailsBusinessLogic, ImageDetailsDataStore
   
   func doSomething(request: ImageDetails.Something.Request)
   {
-    worker = ImageDetailsWorker()
-    worker?.doSomeWork()
-    
-    let response = ImageDetails.Something.Response()
-    presenter?.presentSomething(response: response)
+   
   }
 }

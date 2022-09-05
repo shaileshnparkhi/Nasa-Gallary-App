@@ -144,6 +144,23 @@
 			path = ImageDetailsScene;
 			sourceTree = "<group>";
 		};
+		847016F628C607A600D29418 /* Json File */ = {
+			isa = PBXGroup;
+			children = (
+				8409CB2828C0A2F9000200D3 /* data.json */,
+			);
+			path = "Json File";
+			sourceTree = "<group>";
+		};
+		847016F828C607BF00D29418 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				8409CB2A28C0A302000200D3 /* ImageListScene */,
+				844B379628C0B8C4006D174C /* ImageDetailsScene */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
 		84E39BED28C08997000C0B3B = {
 			isa = PBXGroup;
 			children = (
@@ -169,12 +186,11 @@
 		84E39BF828C08997000C0B3B /* Nasa Gallary App */ = {
 			isa = PBXGroup;
 			children = (
+				847016F828C607BF00D29418 /* Scene */,
+				847016F628C607A600D29418 /* Json File */,
 				84E39BF928C08997000C0B3B /* AppDelegate.swift */,
 				84E39BFB28C08997000C0B3B /* SceneDelegate.swift */,
 				84E39BFF28C08997000C0B3B /* Main.storyboard */,
-				8409CB2828C0A2F9000200D3 /* data.json */,
-				844B379628C0B8C4006D174C /* ImageDetailsScene */,
-				8409CB2A28C0A302000200D3 /* ImageListScene */,
 				84E39C0228C08998000C0B3B /* Assets.xcassets */,
 				84E39C0428C08998000C0B3B /* LaunchScreen.storyboard */,
 				84E39C0728C08998000C0B3B /* Info.plist */,
